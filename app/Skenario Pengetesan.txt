@@ -1,0 +1,65 @@
+Skenario Testing Unit Test
+
+1. MovieViewModel
+   a.Memastikan MovieTvRepository terpanggil
+   b.Memastikan data Movie tidak null
+   c.Memastikan Jumlah data Movie berjumlah sesuai dengan data Dari Api
+
+2. TvshowViewModel
+   a.Memastikan MovieTvRepository terpanggil
+   b.Memastikan data tvShow tidak null
+   c.Memastikan Jumlah data Tvshow berjumlah sesuai dengan data dari Api
+
+3. DetailMovieViewModel
+   a.Memastikan MovieTvRepository terpanggil
+   b.Memastikan data Movie tidak null
+   c.Memastikan data Movie tampil sesuai yang diharapkan
+
+4. DetailTvShowViewModel
+   a.Memastikan MovieTvRepository terpanggil
+   b.Memastikan data tvShow tidak null
+   c.Memastikan data tvShow tampil sesuai yang diharapkan
+
+5. MovieTvRepositori
+   a. getMovieList
+   - Memastikan RemoteDataSource terpanggil
+   - Memastikan data movie tidak null
+   - memastikan jumlah data movie sesuai dengan data dari api
+
+   b. getDetailMovie
+   - memastikan RemoteDataSource terpanggil
+   - memastikan data detail tidak null
+   - memastikan data detail tampil sesuai seperti yang diharapkan
+
+   c. getTvShowList
+   - memastikan RemoteDataSource Terpanggil
+   - memastikan data tvshow tidak null
+   - memastikan jumlah data tvshow sesuai dengan data dari api
+
+   d. getDetailTvShow
+   - memastikan RemoteDataSource Terpanggil
+   - memastikan data detail tidak null
+   - memastikan data detail tampil sesuai seperti yang diharapkan
+
+Skenario Pengetesan Instrumentation Test di MainActivity
+1. Menampilkan data Movie
+   a. Memastikan rvMovie dalam keadaan tampil
+   b. Gulir rvMovie ke posisi data terakhir
+
+2. Menampilkan data TvShow
+   a. klik TabLayout dengan teks Tv Show
+   b. Memastikan rvTvShow dalam keadaan tampil
+   c. Gulir rvTvshow ke posisi data terakhir
+
+3. Mengklick salah satu Item di Detail MovieActivity
+   a. memberi tindakan klik pada data pertama di rvMovie
+   b. memastikan Textview untuk Nama Movie, Tanggal rilis, backdrop, poster, Status, Duration, Bahasa, Overview, Genre, Budget yang diharapkan
+   c. memastikan tombol share tampil
+   d. melakukan pencocokan nama,rilis, dan overview apakah hasilnya sama dengan dummy atau tidak
+
+4. Mengklick salah satu Item di Detail TvShow Activity
+   a. klik TabLayout dengan teks Tv Show
+   b. memberi tindakan klik pada data pertama di rvTvShow
+   c. memastikan Textview untuk Nama TvShow, Tanggal rilis, Season, Duration, Bahasa, Overview, Genre, SeasonList sesuai yang diharapkan
+   d. memastikan tombol share tampil
+   e. melakukan pencocokan nama,rilis, dan overview apakah hasilnya sama dengan dummy atau tidak
